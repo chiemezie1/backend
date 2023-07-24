@@ -6,9 +6,10 @@ app.set("view engine", "ejs");
 
 
 app.use(bodyparser.urlencoded({ extended: true }));
+app.use(express.static("public"));
 
 let day = "";
-let items = [];
+let items = ["Buy food", "cook the food", "eat the food"];
 
 app.get("/", (req, res) => {
   var today = new Date();
