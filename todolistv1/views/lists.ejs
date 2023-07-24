@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+</head>
+<body>
+    <h1>Todo list</h1>
+
+    <p> Today is <%= kindOfDay %> </p>
+    <ul>
+        <li>Buy food</li>
+        <li>cook the food</li>
+        <li>eat the food</li>
+        
+        <% for (var item of items){ %>
+            <li> <%= item %> </li>
+        <% } %>
+    </ul>
+    <form class="" action="/" method="post" >
+        <input type="text" name="newItem" placeholder="What do you want to do today?">
+        <button type="submit" >Add</button>
+    </form>
+
+</body>
+</html>
